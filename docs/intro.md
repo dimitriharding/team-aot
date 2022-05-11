@@ -5,7 +5,7 @@ An accessible Listbox
 ## Import (Semi-Example)
 
 ```jsx
-import { useSelect, Select, Option } from "@chakra-ui/react";
+import { useSelect, Select, Option, Options } from "@chakra-ui/react";
 
 const options = {
   defaultValue: ''
@@ -24,7 +24,16 @@ const { getButtonProps,
         setListboxVisible } = useSelect(options);
 
 
-
+<Select
+   onMouseOver={() => setListboxVisible(true)}
+   onMouseOut={() => setListboxVisible(false)}
+   onFocus={() => setListboxVisible(true)}
+   onBlur={() => setListboxVisible(false)}
+>
+  <Options {...getListboxProps()}>
+    <Option value="" label="" />
+  </Options>
+</Select>
 ```
 
 ## Research
