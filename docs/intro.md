@@ -89,7 +89,9 @@ The useSelect hook will be able to apply the functionality of an unstyled select
 
 Best practices for accessibility will be applied based on:
 
-[WAI-ARIA-Practices [combobox]](https://www.w3.org/TR/wai-aria-practices/#combobox)
+- [WAI-ARIA-Practices [combobox]](https://www.w3.org/TR/wai-aria-practices/#combobox)
+
+Also, color theme will apply the appropriate contrast
 
 ## Performance
 
